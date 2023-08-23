@@ -363,11 +363,11 @@ class uint256_t{
         }
 
     private:
-        std::pair <uint256_t, uint256_t> divmod(const uint256_t & lhs, const uint256_t & rhs) const;
         void init(const char * s);
         void init_from_base(const char * s, uint8_t base);
 
     public:
+        std::pair <uint256_t, uint256_t> divmod(const uint256_t & lhs, const uint256_t & rhs) const;
         uint256_t operator/(const uint128_t & rhs) const;
         uint256_t operator/(const uint256_t & rhs) const;
 
